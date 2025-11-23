@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
       jobElement.innerHTML = `
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div>
-                <h4 class="text-sky-600 text-xl font-bold">${job.title}</h4>
-                <p class="text-lg text-gray-600">${job.location} &bull; ${job.type} &bull; ${job.clearance}</p>
+                <h4 class="text-primary text-xl font-bold">${job.title}</h4>
+                <p class="text-lg text-accent">${job.location} &bull; ${job.type} &bull; ${job.clearance}</p>
             </div>
             <button class="job-toggle mt-4 md:mt-0 btn-secondary">View Details</button>
         </div>
@@ -93,6 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   } else if (container) {
-    container.innerHTML = '<p class="text-center text-lg text-gray-600">There are currently no open positions. Please check back soon!</p>';
+    container.innerHTML = '<p class="text-center text-lg text-accent">There are currently no open positions. Please check back soon!</p>';
   }
 });
